@@ -7,6 +7,8 @@ namespace BlackImoveisII.Models
     {
         private const string dadosConexao = "Database=BlackImoveis; Data Source=localhost; User Id=root;";
 
+        //------------------------------- INSERIR DADOS NA TABELA IMOVEIS----------------------------------------
+
         public void Insert(Anuncio novoAnuncio)
         {
             MySqlConnection conexao = new MySqlConnection (dadosConexao);
@@ -55,6 +57,7 @@ namespace BlackImoveisII.Models
             conexao.Close();
         }
 
+        //------------------------------- LISTAR DADOS DA TABEL IMOVEIS----------------------------------------
                 public List<Anuncio> Query()
         {
             MySqlConnection conexao = new MySqlConnection (dadosConexao);

@@ -1,0 +1,21 @@
+@model Usuario
+@{
+     ViewData["Title"] = "Menu Administrador";
+}
+<div class="menu">
+    <h2>Menu Administrador</h2>
+    <ul>
+        <li>
+            <a asp-controller="Anuncio" asp-action="Lista">Anúncios Enviados</a>
+        </li>
+        <li>
+            <a asp-controller="Mensagem" asp-action="Lista">Mensagens Enviadas</a>
+        </li>
+        <li>
+            <a  asp-controller="Usuario" asp-action="Lista">Usuários Cadastrados</a>
+        </li>
+        <li>
+           <a asp-controller="Usuario" asp-action="Cadastro">Adicionar Usuários</a>
+        </li>
+    </ul>
+</div>

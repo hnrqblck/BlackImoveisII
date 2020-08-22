@@ -14397,6 +14397,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\jorge\\OneDrive\\Documents\\GitHub\\Projetos Pessoais\\BlackImoveisII\\Views\\Usuario\\Lista.cshtml",
+      "TargetPath": "Views\\Usuario\\Lista.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\jorge\\OneDrive\\Documents\\GitHub\\Projetos Pessoais\\BlackImoveisII\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14407,8 +14412,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\jorge\\OneDrive\\Documents\\GitHub\\Projetos Pessoais\\BlackImoveisII\\Views\\Mensagem\\Lista.cshtml",
+      "TargetPath": "Views\\Mensagem\\Lista.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\jorge\\OneDrive\\Documents\\GitHub\\Projetos Pessoais\\BlackImoveisII\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jorge\\OneDrive\\Documents\\GitHub\\Projetos Pessoais\\BlackImoveisII\\Views\\Usuario\\Cadastro.cshtml",
+      "TargetPath": "Views\\Usuario\\Cadastro.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14422,8 +14437,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\jorge\\OneDrive\\Documents\\GitHub\\Projetos Pessoais\\BlackImoveisII\\Views\\Mensagem\\FaleConosco.cshtml",
+      "TargetPath": "Views\\Mensagem\\FaleConosco.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\jorge\\OneDrive\\Documents\\GitHub\\Projetos Pessoais\\BlackImoveisII\\Views\\Anuncio\\Lista.cshtml",
       "TargetPath": "Views\\Anuncio\\Lista.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jorge\\OneDrive\\Documents\\GitHub\\Projetos Pessoais\\BlackImoveisII\\Views\\Usuario\\Login.cshtml",
+      "TargetPath": "Views\\Usuario\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jorge\\OneDrive\\Documents\\GitHub\\Projetos Pessoais\\BlackImoveisII\\Views\\Usuario\\Menu.cshtml",
+      "TargetPath": "Views\\Usuario\\Menu.cshtml",
       "FileKind": "mvc"
     }
   ],

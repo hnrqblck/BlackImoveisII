@@ -1,0 +1,28 @@
+@model Mensagem;
+
+@{
+    ViewData["Title"] = "Fale Conosco";
+}
+<div class="fale-conosco">
+    <div class="fale-conosco__mensagem">
+        <h3>Nos mande uma mensagem</h3>
+        <form method="post">
+            <input asp-for="Nome" name="Nome" placeholder="Nome" required/>
+            <input asp-for="Sobrenome" name="Sobrenome" placeholder="Sobrenome" required/>
+            <input asp-for="Email" name="Email" type="email" placeholder="E-mail" required/>
+            <input asp-for="Telefone" name="Telefone" type="tel" minlength="8" placeholder="Telefone" required/>
+            <textarea asp-for="Mensagens" name="Mensagens" id="mensagem-fale" cols="30" rows="10">Mensagem</textarea>
+            <input type="submit" value="Enviar" id="button">
+        </form>
+        <p id="Mensagem">@ViewBag.Mensagem</p>
+    </div>
+    
+    <div class="fale-conosco__contato">
+        <h3>Nosso Contato</h3>
+        <h5>Telefone</h5>
+        <p>(81) 98837-0031 07h-22h</p>
+        <h5>E-mail</h5>
+        <address>blackimoveis@imoveis.com</address>
+    </div>
+</div>
+

@@ -36,3 +36,9 @@ C:\Users\jorge\OneDrive\Documents\GitHub\Projetos Pessoais\BlackImoveisII\obj\De
 C:\Users\jorge\OneDrive\Documents\GitHub\Projetos Pessoais\BlackImoveisII\obj\Debug\netcoreapp3.1\BlackImoveisII.pdb
 C:\Users\jorge\OneDrive\Documents\GitHub\Projetos Pessoais\BlackImoveisII\obj\Debug\netcoreapp3.1\BlackImoveisII.genruntimeconfig.cache
 C:\Users\jorge\OneDrive\Documents\GitHub\Projetos Pessoais\BlackImoveisII\obj\Debug\netcoreapp3.1\Razor\Views\Anuncio\Lista.cshtml.g.cs
+C:\Users\jorge\OneDrive\Documents\GitHub\Projetos Pessoais\BlackImoveisII\obj\Debug\netcoreapp3.1\Razor\Views\Mensagem\FaleConosco.cshtml.g.cs
+C:\Users\jorge\OneDrive\Documents\GitHub\Projetos Pessoais\BlackImoveisII\obj\Debug\netcoreapp3.1\Razor\Views\Mensagem\Lista.cshtml.g.cs
+C:\Users\jorge\OneDrive\Documents\GitHub\Projetos Pessoais\BlackImoveisII\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Cadastro.cshtml.g.cs
+C:\Users\jorge\OneDrive\Documents\GitHub\Projetos Pessoais\BlackImoveisII\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Lista.cshtml.g.cs
+C:\Users\jorge\OneDrive\Documents\GitHub\Projetos Pessoais\BlackImoveisII\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Login.cshtml.g.cs
+C:\Users\jorge\OneDrive\Documents\GitHub\Projetos Pessoais\BlackImoveisII\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Menu.cshtml.g.cs

@@ -43,9 +43,9 @@
                 <p>
                     <label asp-for="TipoServico">Tipo de Serviço:</label>
                     <select name="TipoServico" asp-for="TipoServico">
-                        <option value="Aluguel">Apartamento</option>
-                        <option value="Venda">Casa</option>
-                        <option value="Troca">Fazenda</option>
+                        <option value="Aluguel">Aluguel</option>
+                        <option value="Venda">Venda</option>
+                        <option value="Troca">Troca</option>
                     </select>
                 </p>
                 <input asp-for="Financiamento" type="checkbox" name="Fincanciamento" value="AceitoFinanciamento" /> Aceito Financiamento
@@ -138,5 +138,6 @@
             </fieldset>
             <input type="submit" value="Enviar" id="button">
         </form>
+        <p id="Mensagem">@ViewBag.Mensagem</p>
     </div>
 </div>

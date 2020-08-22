@@ -10,18 +10,18 @@ using Microsoft.AspNetCore.Http;
 
 namespace BlackImoveisII.Controllers
 {
-    public class AnuncioController : Controller
+    public class MensagemController : Controller
     {
-        public IActionResult Cadastro()
+        public IActionResult FaleConosco()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult Cadastro(Anuncio novoAnuncio)
+        public IActionResult FaleConosco(Mensagem novaMensagem)
         {
-            AnuncioBanco anun =  new AnuncioBanco();
-            anun.Insert(novoAnuncio);
-            ViewBag.Mensagem = "Anúncio enviado com sucesso!";
+            MensagemBanco mens =  new MensagemBanco();
+            mens.Insert(novaMensagem);
+            ViewBag.Mensagem = "Mensagem enviada com sucesso!";
             return View();
         }
         public IActionResult Lista()
@@ -30,10 +30,11 @@ namespace BlackImoveisII.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-            AnuncioBanco anun = new AnuncioBanco();
-            List<Anuncio> lista = anun.Query();
+            MensagemBanco mens = new MensagemBanco();
+            List<Mensagem> lista = mens.Query();
             return View(lista);
         }
+        
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();

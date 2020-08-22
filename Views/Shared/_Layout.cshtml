@@ -1,9 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http;
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BlackImoveisII</title>
+    <title>@ViewData["Title"] - Black Imóveis</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -11,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BlackImoveisII</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Black Imóveis</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,11 +23,18 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Mensagem" asp-action="FaleConosco">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Anuncio" asp-action="Cadastro">Anuncie Seu Imóvel</a>
                         </li>
                     </ul>
                 </div>
             </div>
+             @if(Context.Session.GetInt32("idUsuario") != null)
+                {
+                    <span>Olá, @Context.Session.GetString("nomeUsuario") - <a asp-action="Logout">Sair</a></span>
+                }
         </nav>
     </header>
     <div class="container">
@@ -37,7 +45,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - BlackImoveisII - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2020 - Black Imóveis - <address><a href="mailto:example.com">example@example.com</a></address>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

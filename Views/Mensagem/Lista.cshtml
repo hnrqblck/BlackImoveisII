@@ -1,0 +1,19 @@
+@model List<Mensagem>;
+@{
+    ViewData["Title"] = "Mensagens Recebidas";
+}
+
+<div class="mensagensRecebidas">
+    <h1>Mensagens Recebidas</h1>
+    @*----------CARD MENSAGES-------*@
+    <div class="cardMensagens">
+        @foreach (var mensagens in Model)
+        {
+            <p>Cliente: @mensagens.Nome @mensagens.Sobrenome</p>
+            <p>E-mail: @mensagens.Email</p>
+            <p>Telefone: @mensagens.Telefone</p>
+            <p>Mensagem: @mensagens.Mensagens</p>
+        }
+    </div>
+    <a class="nav-menu" asp-controller="Usuario" asp-action="Menu">Menu</a>
+</div>
