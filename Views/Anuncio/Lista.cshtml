@@ -1,0 +1,48 @@
+@model List<Anuncio>;
+
+@{
+    ViewData["Title"] = "Anuncios Recebidos";
+}
+
+<div class="anunciosRecebidos">
+    <h1>Anuncios Recebidos</h1>
+    @foreach (Anuncio imovel in Model)
+    {
+        <h2>Informações pessoais:</h2>
+        <p>Nome: @imovel.Nome @imovel.Sobrenome</p>
+        <p>E-mail: @imovel.Email</p>
+        <p>Telefone: @imovel.Telefone</p>
+
+        <h2>Informações imóvel:</h2>
+        <p>Tipo de Imóvel: @imovel.Tipo</p>
+        <p>Tipo de Serviço: @imovel.TipoServico</p>
+        @if (@imovel.Financiamento.ToString() != "False")
+            {
+                <p>Aceita financiamento</p>
+            } else {
+                <p>Não aceita financiamento</p>
+            }
+        <p>Endereço: @imovel.Endereco @imovel.Cidade @imovel.Bairro</p>
+        <p>Sala: @imovel.Sala</p>
+        <p>Quarto: @imovel.Quarto</p>
+        <p>Suíte: @imovel.Suite</p>
+        <p>Varanda: @imovel.Varanda</p>
+        <p>Quarto Reversível: @imovel.QrtoReversivel</p>
+        <p>WC Social: @imovel.WCSocial</p>
+        <p>Cozinha: @imovel.Cozinha</p>
+        <p>Copa: @imovel.Copa</p>
+        <p>Armários na Cozinha: @imovel.ArmariosCozinha</p>
+        <p>Área de Serviço: @imovel.AreaServico</p>
+        <p>WC de Serviço: @imovel.WCServico</p>
+        <p>Piscina: @imovel.Piscina</p>
+        <p>Salão de Festa: @imovel.SLFesta</p>
+        <p>Garagem: @imovel.Garagem</p>
+        <p>Área Útil: @imovel.AreaUtil m²</p>
+        <p>Valor Imòvel: R$@imovel.ValorImovel</p>
+        <p>Condomínio: R$@imovel.Condominio</p>
+        <p>IPTU: R$@imovel.IPTU</p>
+        <p>Informações extras: @imovel.Comentario</p>
+        @*Imagens que vão ser salvas no BD*@
+    }
+    
+</div>

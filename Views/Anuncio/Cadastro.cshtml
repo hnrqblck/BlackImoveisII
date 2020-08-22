@@ -1,0 +1,142 @@
+@model Anuncio;
+
+@{
+    ViewData["Title"] = "Anuncie Seu Imóvel";
+}
+
+<div class="anuncie-imovel">
+    <h1>@ViewData["Title"]</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nisi tenetur rerum impedit nostrum doloremque
+         illo unde pariatur sint! A totam,
+         excepturi officia impedit voluptatum corporis nemo vitae neque aut.
+    </p>
+    @*------------PERSONAL INFO FIELDSET-------------*@
+    <div class="form-anuncie">
+        <form method="post" enctype="multipart/form-data">
+            <fieldset class="suas-infos">
+                <legend>
+                    Suas informações:
+                </legend>
+                    <input asp-for="Nome" name="Nome" placeholder="Nome *" required/>
+                    <input asp-for="Sobrenome" name="Sobrenome" placeholder="Sobrenome *" required/>
+                    <input asp-for="Email" name="Email" type="email" placeholder="E-mail *" required/>
+                    <input asp-for="Telefone" name="Telefone" type="tel" minlength="8" placeholder="Telefone *" required/>
+            </fieldset>
+            @*------------REAL ESTATE INFO-------------*@
+            <fieldset class="imoveis-info">
+                <legend>
+                    Informações do imóvel:
+                </legend>
+                <p>
+                    <label asp-for="Tipo">Tipo:</label>
+                    <select name="Tipo" asp-for="Tipo">
+                        <option value="Apartamento">Apartamento</option>
+                        <option value="Casa">Casa</option>
+                        <option value="Fazenda">Fazenda</option>
+                        <option value="Galpão">Galpão</option>
+                        <option value="Loja">Loja</option>
+                        <option value="Sala">Sala</option>
+                        <option value="Terreno">Terreno</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </p>
+                <p>
+                    <label asp-for="TipoServico">Tipo de Serviço:</label>
+                    <select name="TipoServico" asp-for="TipoServico">
+                        <option value="Aluguel">Apartamento</option>
+                        <option value="Venda">Casa</option>
+                        <option value="Troca">Fazenda</option>
+                    </select>
+                </p>
+                <input asp-for="Financiamento" type="checkbox" name="Fincanciamento" value="AceitoFinanciamento" /> Aceito Financiamento
+                <input asp-for="Endereco" name="Endereco" placeholder="Endereço *" required >
+                <input asp-for="Cidade" name="Cidade" placeholder="Cidade *" required >
+                <input asp-for="Bairro" name="Bairro" placeholder="Bairro *" required >
+                <p>
+                    <label asp-for="Sala">Sala</label>
+                    <input asp-for="Sala" type="number" class="Sala" name="Sala" min="0" max="99">
+                </p>
+                <p>
+                    <label asp-for="Quarto">Quarto</label>
+                    <input asp-for="Quarto" type="number" class="Quarto" name="Quarto" min="0" max="99">
+                </p>
+                <p>
+                    <label asp-for="Suite">Suíte</label>
+                    <input asp-for="Suite" type="number" class="Suite" name="Suite" min="0" max="99">
+                </p>
+                <p>
+                    <label asp-for="Varanda">Varanda</label>
+                    <input asp-for="Varanda" type="radio" name="Varanda" value="Sim"/> Sim
+                    <input asp-for="Varanda" type="radio" name="Varanda" value="Nao"/> Não
+                </p>
+                <p>
+                    <label asp-for="QrtoReversivel">Quarto Reversível</label>
+                    <input asp-for="QrtoReversivel" type="radio" name="QrtoReversivel" value="Sim"/> Sim
+                    <input asp-for="QrtoReversivel" type="radio" name="QrtoReversivel" value="Nao"/> Não
+                </p>
+                <p>
+                    <label asp-for="Armarios">Armários</label>
+                    <input asp-for="Armarios" type="radio" name="Armarios" value="Sim"/> Sim
+                    <input asp-for="Armarios" type="radio" name="Armarios" value="Nao"/> Não
+                </p>
+                <p>
+                    <label asp-for="WCSocial">WC Social</label>
+                    <input asp-for="WCSocial" type="radio" name="WCSocial" value="Sim"/> Sim
+                    <input asp-for="WCSocial" type="radio" name="WCSocial" value="Nao"/> Não
+                </p>
+                <p>
+                    <label asp-for="Cozinha">Cozinha</label>
+                    <input asp-for="Cozinha" type="radio" name="Cozinha" value="Sim"/> Sim
+                    <input asp-for="Cozinha" type="radio" name="Cozinha" value="Nao"/> Não
+                </p>
+                <p>
+                    <label asp-for="Copa">Copa</label>
+                    <input asp-for="Copa" type="radio" name="Copa" value="Sim"/> Sim
+                    <input asp-for="Copa" type="radio" name="Copa" value="Nao"/> Não
+                </p>
+                <p>
+                    <label asp-for="ArmariosCozinha">Armários na Cozinha</label>
+                    <input asp-for="ArmariosCozinha" type="radio" name="ArmariosCozinha" value="Sim"/> Sim
+                    <input asp-for="ArmariosCozinha" type="radio" name="ArmariosCozinha" value="Nao"/> Não
+                </p>
+                <p>
+                    <label asp-for="AreaServico">Área de Serviço</label>
+                    <input asp-for="AreaServico" type="radio" name="AreaServico" value="Sim"/> Sim
+                    <input asp-for="AreaServico" type="radio" name="AreaServico" value="Nao"/> Não
+                </p>
+                <p>
+                    <label asp-for="WCServico">WC de Serviço</label>
+                    <input asp-for="WCServico" type="radio" name="WCServico" value="Sim"/> Sim
+                    <input asp-for="WCServico" type="radio" name="WCServico" value="Nao"/> Não
+                </p>
+                <p>
+                    <label asp-for="Piscina">Piscina</label>
+                    <input asp-for="Piscina" type="radio" name="Piscina" value="Sim"/> Sim
+                    <input asp-for="Piscina" type="radio" name="Piscina" value="Nao"/> Não
+                </p>
+                <p>
+                    <label asp-for="SLFesta">Salão de Festa</label>
+                    <input asp-for="SLFesta" type="radio" name="SLFesta" value="Sim"/> Sim
+                    <input asp-for="SLFesta" type="radio" name="SLFesta" value="Nao"/> Não
+                </p>
+                <p>
+                    <label asp-for="Garagem">Garagem</label>
+                    <input asp-for="Garagem" type="radio" name="Garagem" value="Sim"/> Sim
+                    <input asp-for="Garagem" type="radio" name="Garagem" value="Nao"/> Não
+                </p>
+                <input asp-for="AreaUtil" name="AreaUtil" placeholder="Área útil"/>
+                <input asp-for="ValorImovel" name="ValorImovel" placeholder="Valor do imóvel"/>
+                <input asp-for="Condominio" name="Condominio" placeholder="Condomínio"/>
+                <input asp-for="IPTU" name="IPTU" placeholder="IPTU"/>
+                <p>Informações Extras:</p>
+                <textarea asp-for="Comentario" name="Comentario" id="comentario-anuncio" cols="30" rows="10"></textarea>
+               @*Usuário enviar foto*@
+                @*<div class="photoUpload">   
+                    <label asp-for="Fotos">Imagens:</label>
+                    <input asp-for="Fotos" type="file" class="Fotos" name="Fotos" multiple>
+                </div>*@
+            </fieldset>
+            <input type="submit" value="Enviar" id="button">
+        </form>
+    </div>
+</div>
